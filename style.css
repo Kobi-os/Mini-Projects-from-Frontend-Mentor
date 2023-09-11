@@ -1,0 +1,168 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("images/bg-main-mobile.png");
+    background-color: white;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: "Space Grotesk", "sans serif";
+}
+
+.cardBack {
+    background-image: url("images/bg-card-back.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 284px;
+    height: 155px;
+    position: relative;
+    top: 33px;
+    left: 73px;
+    z-index: -1;
+}
+
+.backNumber {
+    color: white;
+    font-size: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+
+.frontCard {
+    background-image: url("images/bg-card-front.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 284px;
+    height: 155px;
+    color: white;
+    position: relative;
+    top: -29px;
+    left: 16px;
+    padding-top: 15px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+}
+
+.bigCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.smallCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    border: 1px solid white;
+    margin-left: 11px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.frontNumber {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.cardName {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    width: 85%;
+    margin-top: 15px;
+}
+
+.cardHolderName, .cardNumber {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+}
+
+.cardNumber, .dateCvc {
+    margin-top: 22px;
+}
+
+.cardHolderName input, .cardNumber input {
+    width: 310px;
+    height: 41px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding-left: 15px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+
+.numberError {
+    color: red;
+    display: none;
+}
+
+.dateCvc {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    width: 192px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    margin-top: 7px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.monthYearError {
+    display: none;
+}
+
+.cvcError {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    display: none;
+}
+
+.inputs input {
+    width: 70px;
+    height: 41px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid hsl(270, 3%, 87%);
+}
+
+
