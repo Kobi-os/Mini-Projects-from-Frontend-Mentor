@@ -80,6 +80,17 @@ body {
     font-size: 20px;
 }
 
+.form , .formCompleted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+    display: none;
+}
+
 .cardName {
     display: flex;
     justify-content: space-between;
@@ -165,4 +176,118 @@ body {
     border: 1px solid hsl(270, 3%, 87%);
 }
 
+.button , .continue {
+    width: 320px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: hsl(270, 3%, 87%);
+    background-color: hsl(278, 68%, 11%);
+}
 
+.thankYou {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: hsl(278, 68%, 11%);
+    margin-top: 16px;
+}
+
+.added {
+    font-size: 18px;
+    color: hsl(279, 6%, 55%);
+    margin-top: 16px;
+}
+
+.continue {
+    margin-top: 48px;
+}
+
+@media only screen and (min-width: 385px) {
+
+    body {
+        background-image: url("images/bg-main-desktop.png");
+        background-position: left;
+    }
+
+    .cardBack {
+        top: 470px;
+        left: 260px;
+        width: 445px;
+        height: 243px;
+    }
+
+    .backNumber {
+        font-size: 15px;
+        padding-right: 50px;
+    }
+
+    .frontCard {
+        top: -54px;
+        left: 164px;
+        width: 445px;
+        height: 243px;
+        padding-top: 27px;
+    }
+
+    .circle {
+        padding-left:29px
+    }
+
+    .bigCircle {
+        width: 45px;
+        height: 45px;
+    }
+
+    .smallCircle {
+        width: 20px;
+        height: 20px;
+        margin-left: 17px;
+    }
+
+    .details {
+        margin-top: 65px;
+    }
+
+    .frontNumber {
+        font-size: 33px;
+    }
+
+    .cardName {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .form, .formCompleted {
+        align-items: flex-end;
+        padding-right: 210px;
+        position: relative;
+        bottom: 230px;
+    }
+
+    .cardHolderName input, .cardNumber input {
+        width: 363px;
+        font-size: 22px;
+    }
+
+    .inputs {
+        width: 373px;
+        margin-top: 7px;
+    }
+
+    .inputs input {
+        width: 75px;
+    }
+
+    .inputs .cvc {
+        width: 190px;
+        padding-left: 20px;
+    }
+
+    .button, .continue {
+        width: 370px;
+        font-size: 16px;
+    }
+
+}
